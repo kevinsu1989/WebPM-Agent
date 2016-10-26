@@ -1,1 +1,1 @@
-python ez_setup.py install -U flask
+python ./shell/ez_setup.py -U flask
