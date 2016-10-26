@@ -1,0 +1,15 @@
+{
+  "name": "webpm-agent",
+  "version": "1.0.0",
+  "description": "webpm数据采集",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.hunantv.com:sukan/WebPM-Agent.git"
+  },
+  "author": "KevinSu",
+  "license": "ISC"
+}
