@@ -1,5 +1,14 @@
+from flask import Flask, request
 import subprocess
 import json
-out = subprocess.Popen(['phantomjs', './netsniff.js', 'http://www.mgtv.com/beta/'], stdout=subprocess.PIPE).communicate()[0]
+app = Flask(__name__)
 
-print out
+@app.route('/')
+def main():
+    url = request.args.get('url')
+    out = subprocess.Popen(['./bin/phantomjs', './netsniff.js', url], stdout=subprocess.PIPE).communicate()[0]
+
+    return out
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='8008')
