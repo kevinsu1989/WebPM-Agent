@@ -11,3 +11,10 @@ sh ./shell/install.sh
 ```
 sh ./shell/run.sh
 ```
+
+
+5.简易安装
+```
+wget http://10.200.8.234:8080/WebPM-Agent-install.sh
+sh WebPM-Agent-install.sh
+```
