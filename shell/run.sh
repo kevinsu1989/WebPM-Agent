@@ -1,1 +1,1 @@
-python app.py
+gunicorn app:app --daemon -b 0.0.0.0:8008
